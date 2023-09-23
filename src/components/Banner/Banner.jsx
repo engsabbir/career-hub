@@ -11,7 +11,7 @@ const Banner = () => {
                     <Link to={'/jobs'} className="btn  bg-gradient-to-r from-sky-500 to-indigo-500 text-white">Get Started</Link>
                 </div>
                 <div>
-                    <img src="../../../assets/images/user.png" alt="" />
+                    <img src="https://i.ibb.co/Rgyqx2D/user.png" />
                 </div>
             </div>
         </div>
