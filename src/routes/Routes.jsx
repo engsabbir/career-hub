@@ -5,6 +5,9 @@ import AppliedJob from "../pages/AppliedJob/AppliedJob";
 import ErrorMessage from "../components/ErrorMessage/ErrorMessage";
 import Blog from "../pages/Blog/Blog";
 import JobDetails from "../pages/JobDetails/JobDetails";
+import Jobs from "../pages/Jobs/Jobs";
+import AboutUs from "../pages/AboutUs/AboutUs";
+import ContactUs from "../pages/ContactUs/ContactUs";
 
 
 const Routes = createBrowserRouter([
@@ -23,6 +26,11 @@ const Routes = createBrowserRouter([
                 loader:()=>fetch('/data/jobs.json')
             },
             {
+                path: '/jobs',
+                element:<Jobs></Jobs>,
+                loader:()=>fetch('/data/jobs.json')
+            },
+            {
                 path: '/blog',
                 element: <Blog></Blog>
             },
@@ -30,6 +38,14 @@ const Routes = createBrowserRouter([
                 path: '/job/:id',
                 element: <JobDetails></JobDetails>,
                 loader:()=> fetch('/data/jobs.json')
+            },
+            {
+                path:'/about-us',
+                element:<AboutUs></AboutUs>
+            },
+            {
+                path:'/contact-us',
+                element:<ContactUs></ContactUs>
             }
         ]
     }

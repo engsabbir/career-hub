@@ -8,7 +8,7 @@ const Banner = () => {
                 <div className="space-y-5">
                     <h1 className="text-4xl md:text-5xl font-extrabold">One Step <br />Closer To Your <br /><span className="text-[#9873FF]">Dream Job</span></h1>
                     <p>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
-                    <Link to={'/applied-jobs'} className="btn  bg-gradient-to-r from-sky-500 to-indigo-500 text-white">Get Started</Link>
+                    <Link to={'/jobs'} className="btn  bg-gradient-to-r from-sky-500 to-indigo-500 text-white">Get Started</Link>
                 </div>
                 <div>
                     <img src="../../../assets/images/user.png" alt="" />

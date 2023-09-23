@@ -6,6 +6,7 @@ const NavBar = () => {
     const links =
         <>
             <li><NavLink to='/'>Home</NavLink></li>
+            <li><NavLink to='/jobs'>Jobs</NavLink></li>
             <li><NavLink to='/applied-jobs'>Applied Jobs</NavLink></li>
             <li><NavLink to='/blog'>Blog</NavLink></li>
         </>
@@ -30,7 +31,7 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="px-3 py-2 rounded bg-gradient-to-r from-cyan-500 to-blue-500 text-white">Star Applying</a>
+                    <NavLink to={'/jobs'} className="px-3 py-2 rounded bg-gradient-to-r from-cyan-500 to-blue-500 text-white">Star Applying</NavLink>
                 </div>
             </div>
         </div>

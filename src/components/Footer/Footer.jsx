@@ -1,5 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 
+import { NavLink } from "react-router-dom";
+
 
 const Footer = () => {
     return (
@@ -7,18 +9,10 @@ const Footer = () => {
             <div className="max-w-screen-xl mx-auto">
                 <footer className="footer p-10  text-base-content">
                     <nav>
-                        <header className="footer-title">Services</header>
-                        <a className="link link-hover">Branding</a>
-                        <a className="link link-hover">Design</a>
-                        <a className="link link-hover">Marketing</a>
-                        <a className="link link-hover">Advertisement</a>
-                    </nav>
-                    <nav>
                         <header className="footer-title">Company</header>
-                        <a className="link link-hover">About us</a>
-                        <a className="link link-hover">Contact</a>
-                        <a className="link link-hover">Jobs</a>
-                        <a className="link link-hover">Press kit</a>
+                        <NavLink to={'/about-us'} className="link link-hover">About us</NavLink>
+                        <NavLink to={'/contact-us'} className="link link-hover">Contact</NavLink>
+                        <NavLink to={'/jobs'} className="link link-hover">Jobs</NavLink>
                     </nav>
                     <nav>
                         <header className="footer-title">Legal</header>
